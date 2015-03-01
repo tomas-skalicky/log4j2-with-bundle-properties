@@ -24,7 +24,7 @@ public class ServletWithSession extends HttpServlet {
     private static LocalDateTime startTime = null;
     private static final AtomicLong visitors = new AtomicLong(0l);
     private static final String FORGET_PARAMETER_NAME = "forget";
-    private static final String REVISION = "SESSION_A";
+    private static final String REVISION = "SESSION_D";
 
     @Override
     protected void doGet(final HttpServletRequest httpServletRequest,

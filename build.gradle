@@ -28,8 +28,10 @@ repositories {
 dependencies {
     compile libraries.logging
     
-    // TODO
+    // FIXME should be accessible only by compile time, not runtime (provided by servlet container) -> should not be added to artifacts
     compile libraries.javax_servlet_api
+    
+    compile libraries.spring_web
 }
 
 task wrapper(type: Wrapper) {
