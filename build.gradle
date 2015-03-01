@@ -92,5 +92,6 @@ task deployOnLocalTomcat(type: Copy) {
     into "${tomcatWebapps}"
     
     dependsOn war
-    dependsOn cleanUpLocalTomcat
+    // The versions are different (parallel deployment) -> not necessary
+    //dependsOn cleanUpLocalTomcat
 }
