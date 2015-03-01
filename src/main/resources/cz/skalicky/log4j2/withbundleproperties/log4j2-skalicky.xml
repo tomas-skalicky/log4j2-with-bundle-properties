@@ -3,7 +3,7 @@
 <Configuration status="info">
 
 	<Properties>
-		<Property name="fileBaseFolder">${sys:log4j2-with-bundle-properties.root}/../../logs/log4j-with-bundle-properties/${bundle:cz.skalicky.log4j2.withbundleproperties.log4j2:appContextName}
+		<Property name="fileBaseFolder">/var/log/tomcat8/log4j-with-bundle-properties/${bundle:cz.skalicky.log4j2.withbundleproperties.log4j2:appContextName}
 		</Property>
 	</Properties>
 

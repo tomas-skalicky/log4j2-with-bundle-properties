@@ -4,11 +4,6 @@
 	version="3.1">
 
 	<context-param>
-		<param-name>webAppRootKey</param-name>
-		<param-value>log4j2-with-bundle-properties.root</param-value>
-	</context-param>
-
-	<context-param>
 		<param-name>isLog4jAutoInitializationDisabled</param-name>
 		<param-value>true</param-value>
 	</context-param>
@@ -18,11 +13,6 @@
 		<param-name>log4jConfiguration</param-name>
 		<param-value>classpath:cz/skalicky/log4j2/withbundleproperties/log4j2-skalicky.xml</param-value>
 	</context-param>
-
-	<!-- NOTE: This listener must be registered before the log4j one!!! -->
-	<listener>
-		<listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
-	</listener>
 
 	<listener>
 		<listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class>
