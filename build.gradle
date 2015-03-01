@@ -79,17 +79,10 @@ ext {
 	tomcatWebapps = "${catalinaBase}/webapps"
 }
 
-task cleanUpLocalTomcat(type: Exec) {
-    executable './cleanUpLocalTomcat.bash'
-    args "${tomcatWebapps}", "${war.archiveName}"
-}
-
 task deployOnLocalTomcat(type: Copy) {
     println "Deployment: ${war.archivePath} -> ${tomcatWebapps}"
     from war
     into "${tomcatWebapps}"
     
     dependsOn war
-    // The versions are different (parallel deployment) -> not necessary
-    //dependsOn cleanUpLocalTomcat
 }

@@ -22,7 +22,7 @@ public class ServletWithNoSession extends HttpServlet {
 
     private static LocalDateTime startTime = null;
     private static final AtomicLong visitors = new AtomicLong(0l);
-    private static final String REVISION = "NO_SESSION_D";
+    private static final String REVISION = "NO_SESSION_A";
 
     @Override
     protected void doGet(final HttpServletRequest httpServletRequest,
